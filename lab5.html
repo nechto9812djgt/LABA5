@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab5</title>
+    <style>
+        .title{ font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div>
+        <p class="title">Первое задание:</p>
+        <p id="first"></p>
+        <p class="title">Второе задание:</p>
+        <p id="second"></p>
+        <p class="title">Третье задание:</p>
+        <button id="btn1">Нажмите</button>
+        <p class="title">Четвертое задание:</p>
+        <button id="btn2">Нажмите</button>
+        <p class="title">Пятое задание:</p>
+        <p id="third"></p>
+        <p class="title">Шестое задание:</p>
+        <p id="fourth"></p>
+        <p class="title">Седьмое задание:</p>
+        <p id="fifth"></p>
+        <p class="title">Восьмое задание:</p>
+        <p id="Sixth"></p>
+        <p class="title">Девятое задание:</p>
+        <p id="seventh"></p>
+        <p class="title">Десятое задание:</p>
+        <p id="eight"></p>
+        <p class="title">Одинадцатое задание:</p>
+        <p id="nine"></p>
+        <p class="title">Двенадцатое задание:</p>
+        <p id="ten"></p>
+        <p class="title">Тринадцатое задание:</p>
+        <p id="eleven"></p>
+        <p class="title">Четырнадцатое задание:</p>
+        <button id="btn3">Нажмите</button> <button id="btn4">Нажмите</button>
+        <p class="title">Пятнадцатое задание:</p>
+        <p id="twelve"></p>
+        <p class="title">Шестнадцатое задание:</p>
+        <p>2</p>
+        <p class="title">Семнадцатое задание:</p>
+        <p id="thirteen"></p>
+        <p class="title">Восемнадцатое задание:</p>
+        <p id="fourteen"></p>
+        <p class="title">Девятнадцатое задание:</p>
+        <p id="fiveteen"></p>
+        <p class="title">Двенадцатое задание:</p>
+        <p id="sixteen"></p>
+        <p class="title">Двадцать первое задание:</p>
+        <p id="seventeen"></p>
+        <p class="title">Двадцать второе задание:</p>
+        <p id="eighteen"></p>
+        <p class="title">Двадцать третье задание:</p>
+        <p id="nineteen"></p>
+    </div>
+    <script>
+        let str = 'hdfgv';
+        let N1 = document.getElementById('first');
+
+        N1.innerHTML = `${str[0]} <br> ${str[1]} <br> ${str[4]}`;
+    </script>
+    <script>
+        const secondsInHour = 60 * 60;
+        document.getElementById('second').innerText = `В часе ${secondsInHour} секунд`;
+    </script>
+    <script>
+        function numm()
+        {
+            var num = 1;
+            num += 12;
+            num -= 14;
+            num *= 5;
+            num /= 7;
+            num += 1;
+            num -= 1;
+            alert(num);
+        }
+        document.getElementById('btn1').addEventListener('click', numm);
+    </script>
+    <script>
+        function numm()
+        {
+            var num = 3;
+            alert(num);
+        }
+        document.getElementById('btn2').addEventListener('click', numm);
+    </script>
+    <script>
+        var a = 10;
+        var b = 2;
+        const sum = a + b;
+        const dif = a - b;
+        const prod = a * b;
+        const div = a / b;
+        document.getElementById('third').innerHTML = `a + b = ${sum} <br> a - b = ${dif} <br> a * b = ${prod} <br> a / b = ${div}`;
+    </script>
+    <script>
+        var c = 15;
+        var d = 2;
+        const result = c + d;
+        document.getElementById('fourth').innerHTML = `c + d = ${result}`;
+    </script>
+    <script>
+        var a = 10;
+        var b = 2;
+        var c = 5;
+        document.getElementById('fifth').innerHTML = `a + b + c = ${a + b + c}`;
+    </script>
+    <script>
+        var a = 17;
+        var b = 10;
+        var c = a - b;
+        var d = 7;
+        const result1 = c + d;
+        document.getElementById('Sixth').innerHTML = `${result1}`;
+    </script>
+    <script>
+        const secondsInDay = secondsInHour * 24;
+        const secondsInMonth = secondsInDay * 30;
+        document.getElementById('seventh').innerHTML = `В часе ${secondsInHour} секунд <br> В дне ${secondsInDay} секунд <br> В месяце ${secondsInMonth} секунд <br>`;
+    </script>
+    <script>
+        const now = new Date();
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const second = now.getSeconds();
+        document.getElementById('eight').innerText = `Текущее время: ${hour}:${minute}:${second}`;
+    </script>
+    <script>
+        var a = 8;
+        document.getElementById('nine').innerText = `8^2 = ${Math.pow(a, 2)}`;
+    </script>
+    <script>
+        const array = [1, 2, 3, 4, 5, 6];
+        const sumAr = array.filter(num => num % 2 === 0).reduce((sum, num) => sum + Math.sqrt(num), 0);
+        document.getElementById('ten').innerText = `${sumAr}`;
+    </script>
+    <script>
+        var apple = 1.15;
+        var orange = 2.30;
+        document.getElementById('eleven').innerText = `${apple + orange}`;
+    </script>
+    <script>
+        function wrong()
+        {
+            let x = 5;
+            alert(x++);
+        }
+        function right()
+        {
+            let x = 5;
+            alert(++x);
+        }
+        document.getElementById('btn3').addEventListener('click', wrong);
+        document.getElementById('btn4').addEventListener('click', right);
+    </script>
+    <script>
+        document.getElementById('twelve').innerText = `${[ ] + false - null + true }`;
+    </script>
+    <script>
+        let y = 1;
+        let x = y = 2;
+        console.log(x); //выведет 2
+    </script>
+    <script>
+        document.getElementById('thirteen').innerText = `${[ ] + 1 + 2}`;
+    </script>
+    <script>
+        a6 = 5 % 3;
+        a7 = 3 % 5;
+        a8 = 5 + '3';
+        a9 = '5' - 3;
+        a10 = 75 + 'кг';
+        document.getElementById('fourteen').innerText = `${a6} | ${a7} | ${a8} | ${a9} | ${a10}`;
+    </script>
+    <script>
+        var height = 23;
+        var width = 10;
+        var s = height * width;
+        document.getElementById('fiveteen').innerText = `Площадь: ${s} кв. см.`;
+    </script>
+    <script>
+        let heightC = 10;
+        let dC = 4;
+        let r = dC / 2;
+        let v = Math.PI * Math.pow(r, 2) * heightC;
+        document.getElementById('sixteen').innerText = `Объем цилиндра: ${v.toFixed(2)} куб. см.`;
+    </script>
+    <script>
+        const S = 2000000;
+        const p = 0.10;
+        const years = 5;
+        const monthlyRate = p / 12;
+        const numMonths = years * 12;
+        const monthlyPayment = S * monthlyRate * (1 + monthlyRate)**(numMonths) / ((1 + monthlyRate)**(numMonths) - 1);
+        const totalPayments = monthlyPayment * numMonths;
+        const perpel = totalPayments - S;
+        document.getElementById('seventeen').innerText = `Переплата: ${perpel.toFixed(2)} руб.`;
+    </script>
+    <script>
+        var strr = "Привет";
+        var num = 123;
+        var flag = true;
+        var txt = "true";
+        var output = document.getElementById('eighteen');
+        output.innerHTML = `Тип переменной str: ${typeof strr} <br>`;
+        output.innerHTML += `Тип переменной num: ${typeof num} <br>`;
+        output.innerHTML += `Тип переменной flag: ${typeof flag} <br>`;
+        output.innerHTML += `Тип переменной txt: ${typeof txt} <br>`;
+    </script>
+    <script>
+        var numb = 10;
+        var numb1 = -10;
+        document.getElementById('nineteen').innerHTML = `Противоположение 10: ${-numb} <br> Противоположное -10: ${-numb1}`;
+    </script>
+</body>
+</html>
